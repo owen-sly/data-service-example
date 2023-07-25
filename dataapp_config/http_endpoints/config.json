@@ -1,5 +1,22 @@
 [
   {
+    "name": "get_price_by year_and_fuel",
+    "description": "",
+    "method": "GET",
+    "endpoint": "/price_per_year_and_fuel",
+    "data_source": {
+      "cluster_id": 1379661944646227394
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "sql_file": "sql/GET-price_per_year_and_fuel.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
     "name": "/avg_price_per_year",
     "description": "",
     "method": "GET",
@@ -41,23 +58,6 @@
     "return_type": "json"
   },
   {
-    "name": "/total_order_per_year",
-    "description": "",
-    "method": "GET",
-    "endpoint": "/total_order_per_year",
-    "data_source": {
-      "cluster_id": 1379661944646227394
-    },
-    "params": [],
-    "settings": {
-      "timeout": 5000,
-      "row_limit": 50
-    },
-    "sql_file": "sql/GET-total_order_per_year.sql",
-    "type": "sql_endpoint",
-    "return_type": "json"
-  },
-  {
     "name": "/price_by_brand_year",
     "description": "",
     "method": "GET",
@@ -78,6 +78,23 @@
       "row_limit": 50
     },
     "sql_file": "sql/GET-price_by_brand_year.sql",
+    "type": "sql_endpoint",
+    "return_type": "json"
+  },
+  {
+    "name": "/total_order_per_year",
+    "description": "",
+    "method": "GET",
+    "endpoint": "/total_order_per_year",
+    "data_source": {
+      "cluster_id": 1379661944646227394
+    },
+    "params": [],
+    "settings": {
+      "timeout": 5000,
+      "row_limit": 50
+    },
+    "sql_file": "sql/GET-total_order_per_year.sql",
     "type": "sql_endpoint",
     "return_type": "json"
   }
